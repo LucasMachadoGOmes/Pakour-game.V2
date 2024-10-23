@@ -1,15 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://48km05w4ic5o"]
+[gd_scene load_steps=4 format=3 uid="uid://48km05w4ic5o"]
 
+[ext_resource type="Script" path="res://Scenes/finish.gd" id="1_rgrhd"]
 [ext_resource type="Texture2D" uid="uid://bp18ci8u3mu80" path="res://Assets/Other sprites/EnergyPack.png" id="1_x72oc"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y5gp6"]
-radius = 3.89744
-height = 16.8
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7nrry"]
+radius = 4.0
+height = 16.0
 
-[node name="Finish" type="Sprite2D"]
-position = Vector2(0.500001, -3)
-scale = Vector2(2.4375, 2.5)
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_rgrhd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_x72oc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_y5gp6")
+shape = SubResource("CapsuleShape2D_7nrry")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

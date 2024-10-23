@@ -1,6 +1,6 @@
 extends Node
 @onready var score_label: Label = $ScoreLabel
-
+const EndScreen = preload("res://Scenes/EndScreen.tscn")
 var score = 0
 
 func add_point(): 
