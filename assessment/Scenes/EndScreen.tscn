@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqojpwc1kf5tb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sr002"]
+bg_color = Color(0.259294, 0.259294, 0.259294, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wtmqu"]
+line_spacing = 0.0
+font_size = 75
+font_color = Color(0.414669, 0.705729, 0.933192, 1)
+
+[node name="GameOver" type="CanvasLayer"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sr002")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+text = "Game Over
+You win"
+label_settings = SubResource("LabelSettings_wtmqu")
+horizontal_alignment = 1
