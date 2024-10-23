@@ -1,0 +1,65 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1729663176
+icon.svg::CompressedTexture2D::7751872026574593445::1729513052::1729585816::1::::<><>::
+::res://Assets/::1729585736
+::res://Assets/Alien/::1729585816
+Alien_death.png::CompressedTexture2D::5926579744053361949::1729513052::1729585816::1::::<><>::
+Alien_idle.png::CompressedTexture2D::4515253989676300972::1729513052::1729585816::1::::<><>::
+Alien_jump.png::CompressedTexture2D::5103923763068292276::1729513052::1729585816::1::::<><>::
+Alien_run.png::CompressedTexture2D::4890761954116924445::1729513052::1729585816::1::::<><>::
+slime_purple.png::CompressedTexture2D::4672392761998680239::1729513052::1729585816::1::::<><>::
+::res://Assets/Astronaut/::1729585816
+Astronaut_Death.png::CompressedTexture2D::1916396742542385473::1729513052::1729585816::1::::<><>::
+Astronaut_Idle.png::CompressedTexture2D::3259760167957411709::1729513052::1729585816::1::::<><>::
+Astronaut_Jump.png::CompressedTexture2D::4093595507344190874::1729513052::1729585816::1::::<><>::
+Astronaut_Run.png::CompressedTexture2D::1964654881198203017::1729513052::1729585816::1::::<><>::
+::res://Assets/Digging Machines/::1729585816
+Digging_Machine_Back_Section.png::CompressedTexture2D::8466853663050182382::1729513052::1729585816::1::::<><>::
+Digging_Machine_Front_Section_30fps.png::CompressedTexture2D::2209892269528470323::1729513052::1729585816::1::::<><>::
+runner-asset-sheet-with-grid.png::CompressedTexture2D::5111211066360271944::1729513052::1729585816::1::::<><>::
+runner-asset-sheet-with-transparency.png::CompressedTexture2D::5829622295357860348::1729513052::1729585816::1::::<><>::
+::res://Assets/Effects/::1729585816
+Dust-duplicate frames for timing.png::CompressedTexture2D::1664740855385316601::1729513052::1729585816::1::::<><>::
+Dust.png::CompressedTexture2D::8747576623206980457::1729513052::1729585816::1::::<><>::
+sparkle-effect.png::CompressedTexture2D::8894644562347398801::1729513052::1729585816::1::::<><>::
+::res://Assets/fonts/::1729585816
+PixelOperator8-Bold.ttf::FontFile::3915686367279205359::1729513052::1729585816::1::::<><>::
+PixelOperator8.ttf::FontFile::864979865143821588::1729513052::1729585816::1::::<><>::
+::res://Assets/Other sprites/::1729585816
+coin.png::CompressedTexture2D::2642045377451125538::1729513052::1729585816::1::::<><>::
+EnergyPack.png::CompressedTexture2D::3494934864330212779::1729513052::1729585816::1::::<><>::
+GlassShards.png::CompressedTexture2D::3458523539422061551::1729513052::1729585816::1::::<><>::
+RockShards.png::CompressedTexture2D::7532672972720857262::1729513052::1729585816::1::::<><>::
+superpowers-rocks-1a-tiling.png::CompressedTexture2D::7037578715904686205::1729513052::1729585816::1::::<><>::
+world_tileset.png::CompressedTexture2D::6764997622923367977::1729513052::1729585816::1::::<><>::
+::res://Assets/Tiles/::1729585816
+RunnerTileSet.png::CompressedTexture2D::480998526119637666::1729513052::1729585816::1::::<><>::
+::res://Assets/UI/::1729585816
+FullGauge.png::CompressedTexture2D::4621732737069326163::1729513052::1729585816::1::::<><>::
+GaugeSections.png::CompressedTexture2D::4234437968905050922::1729513052::1729585816::1::::<><>::
+GemCounter.png::CompressedTexture2D::3858251530786336870::1729513052::1729585816::1::::<><>::
+Hyphen.png::CompressedTexture2D::1972420693703382817::1729513052::1729585816::1::::<><>::
+LivesCounter.png::CompressedTexture2D::1468621284349178349::1729513052::1729585816::1::::<><>::
+Numbers.png::CompressedTexture2D::4243182997862429635::1729513052::1729585816::1::::<><>::
+SmallAstronaut_Idle.png::CompressedTexture2D::5141459437219187029::1729513052::1729585816::1::::<><>::
+SmallAstronaut_Run.png::CompressedTexture2D::1320453107136269635::1729513052::1729585816::1::::<><>::
+SmallDriller.png::CompressedTexture2D::3007261398819437133::1729513052::1729585816::1::::<><>::
+superpowers-rocks-1a-tiling.png::CompressedTexture2D::4373033320182800522::1729513052::1729585816::1::::<><>::
+Times.png::CompressedTexture2D::5303992335018921759::1729513052::1729585816::1::::<><>::
+::res://Scenes/::1729645436
+coin.tscn::PackedScene::5452304369103235351::1729645436::0::1::::<><>::res://Scripts/coin.gd<>uid://bdv3dpf2vkijq::::res://Assets/Other sprites/coin.png
+Enemy.tscn::PackedScene::2811156512426171617::1729513052::0::1::::<><>::uid://b7tlvj3adhmih::::res://Assets/Alien/slime_purple.png<>res://Scripts/enemy.gd<>uid://cwl0rrwx4qa8q::::res://Scenes/killzone.tscn
+game.tscn::PackedScene::6114682708821051568::1729645436::0::1::::<><>::uid://b22b6idfqgak1::::res://Scenes/player.tscn<>res://Scripts/game_manager.gd<>uid://bv111uow04top::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://g388fvdrydqg::::res://Assets/Tiles/RunnerTileSet.png<>uid://c3nar08g3ttw0::::res://Assets/Other sprites/world_tileset.png<>uid://c2847oqlqocrr::::res://Scenes/movingplatform.tscn<>uid://cjxewk04rldu2::::res://Scenes/coin.tscn<>uid://cwl0rrwx4qa8q::::res://Scenes/killzone.tscn<>uid://bgb0lpvg1fcar::::res://Scenes/Enemy.tscn<>uid://mlademd7x4tc::::res://Assets/fonts/PixelOperator8.ttf<>uid://csorg3qnmn3ig::::res://Scenes/SizeDown.tscn
+killzone.tscn::PackedScene::6341253294000165026::1729645436::0::1::::<><>::res://Scripts/killzone.gd
+movingplatform.tscn::PackedScene::6737883310257730091::1729513052::0::1::::<><>::uid://g388fvdrydqg::::res://Assets/Tiles/RunnerTileSet.png
+player.tscn::PackedScene::4337374162953416702::1729645436::0::1::::<><>::uid://bmpb1kn4v2smv::::res://Assets/Astronaut/Astronaut_Idle.png<>res://Scripts/player.gd<>uid://byk76jox1yrtq::::res://Assets/Astronaut/Astronaut_Jump.png<>uid://28xtxfi8wkgv::::res://Assets/Astronaut/Astronaut_Run.png
+powerup.gd::GDScript::-1::1729586429::0::1::::<>Area2D<>::
+SizeDown.tscn::PackedScene::6066186241045995982::1729645436::0::1::::<><>::res://Scripts/powerup.gd<>uid://dyyvq44hjte62::::res://Assets/Effects/sparkle-effect.png
+SpeedUp.tscn::PackedScene::4143112509001545677::1729645436::0::1::::<><>::res://Scripts/powerup.gd<>uid://dyyvq44hjte62::::res://Assets/Effects/sparkle-effect.png
+::res://Scripts/::1729645436
+coin.gd::GDScript::-1::1729513052::0::1::::<>Area2D<>::
+enemy.gd::GDScript::-1::1729513052::0::1::::<>Node2D<>::
+game_manager.gd::GDScript::-1::1729513052::0::1::::<>Node<>::
+killzone.gd::GDScript::-1::1729513052::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1729645436::0::1::::<>CharacterBody2D<>::
+powerup.gd::GDScript::-1::1729645211::0::1::::<>Area2D<>::
