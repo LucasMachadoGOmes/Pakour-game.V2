@@ -1,4 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqojpwc1kf5tb"]
+[gd_scene load_steps=6 format=3 uid="uid://cqojpwc1kf5tb"]
+
+[ext_resource type="Script" path="res://Scenes/end_screen.gd" id="1_4cub8"]
+[ext_resource type="FontFile" uid="uid://bv111uow04top" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="1_nuvuq"]
+[ext_resource type="FontFile" uid="uid://mlademd7x4tc" path="res://Assets/fonts/PixelOperator8.ttf" id="2_6jwce"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sr002"]
 bg_color = Color(0.259294, 0.259294, 0.259294, 1)
@@ -11,9 +15,11 @@ border_color = Color(0, 0, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_wtmqu"]
 line_spacing = 0.0
 font_size = 75
-font_color = Color(0.414669, 0.705729, 0.933192, 1)
 
 [node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_4cub8")
+
+[node name="Timer" type="Timer" parent="."]
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 anchors_preset = 15
@@ -32,10 +38,18 @@ theme_override_constants/margin_bottom = 40
 
 [node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_nuvuq")
+text = "
+"
 
 [node name="Title" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6jwce")
 text = "Game Over
-You win"
+You died"
 label_settings = SubResource("LabelSettings_wtmqu")
 horizontal_alignment = 1
