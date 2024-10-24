@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cqojpwc1kf5tb"]
+[gd_scene load_steps=5 format=3 uid="uid://cqojpwc1kf5tb"]
 
 [ext_resource type="Script" path="res://Scripts/killzone.gd" id="1_47s5b"]
-[ext_resource type="FontFile" uid="uid://bv111uow04top" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="1_nuvuq"]
 [ext_resource type="FontFile" uid="uid://mlademd7x4tc" path="res://Assets/fonts/PixelOperator8.ttf" id="2_6jwce"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sr002"]
@@ -19,12 +18,14 @@ font_size = 75
 [node name="GameOver" type="CanvasLayer"]
 script = ExtResource("1_47s5b")
 
-[node name="Timer" type="Timer" parent="."]
-
 [node name="PanelContainer" type="PanelContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_sr002")
@@ -40,15 +41,15 @@ theme_override_constants/margin_bottom = 40
 layout_mode = 2
 theme_override_constants/separation = 100
 
-[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Rows"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("1_nuvuq")
-text = "
-"
-
 [node name="Title" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6jwce")
 text = "Game Over"
 label_settings = SubResource("LabelSettings_wtmqu")
 horizontal_alignment = 1
+
+[node name="Restart" type="Button" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+text = "Restart"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/Restart" to="." method="_on_button_pressed"]

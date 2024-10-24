@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-var SPEED = 500.0
+var SPEED = 250.0
 var JUMP_VELOCITY = -350.0
 @onready var timer = $Timer
 
