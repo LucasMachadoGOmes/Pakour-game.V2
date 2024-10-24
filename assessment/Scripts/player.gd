@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-var SPEED = 130.0
+var SPEED = 500.0
 var JUMP_VELOCITY = -350.0
 @onready var timer = $Timer
 
@@ -46,14 +46,22 @@ func _physics_process(delta):
 #this is how the powerup interacts with the player. 
 #It will call this function when it interacts with the player and this will change the players size
 func add_powerup():
+	#this changes the players size
 	self.scale = Vector2(0.5, 0.5)
-	SPEED = 200.0
+	#this changes the players speed
+	SPEED = 180.0
+	#this changes the players jump height
 	JUMP_VELOCITY = -400.0
+	#this creates a time limit for the powerup so it doesn't last forever
 	timer.start()
 
+#this is how the powerup times out/resets your normal stats
 func _on_timer_timeout():
+	#resets size
 	self.scale = Vector2 (1, 1)
+	#resets speed
 	SPEED = 130.0
+	#resets jump height
 	JUMP_VELOCITY = -350.0
 	
 	

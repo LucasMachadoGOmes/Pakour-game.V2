@@ -8,8 +8,3 @@ func _on_body_entered(body):
 		if body.has_method('add_powerup'):
 			body.add_powerup()
 			queue_free()
-		
-	
-	
-	
-	
