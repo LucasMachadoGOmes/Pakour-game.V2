@@ -20,3 +20,9 @@ script = ExtResource("1_rgrhd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FinishZone"]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_h0utc")
+
+[node name="Timer" type="Timer" parent="FinishZone"]
+wait_time = 3.0
+
+[connection signal="body_entered" from="FinishZone" to="FinishZone" method="_on_body_entered"]
+[connection signal="timeout" from="FinishZone/Timer" to="FinishZone" method="_on_timer_timeout"]
