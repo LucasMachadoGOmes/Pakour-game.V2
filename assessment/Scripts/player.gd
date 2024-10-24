@@ -56,3 +56,5 @@ func _on_timer_timeout():
 	SPEED = 130.0
 	JUMP_VELOCITY = -350.0
 	
+	
+	

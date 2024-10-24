@@ -4,19 +4,12 @@ extends CanvasLayer
 @onready var title = $PanelContainer/MarginContainer/Rows/Title
 var win = false
 
-func _on_state_changed():
+func on_state_change():
 	print("dead")
 
 func _ready():
-	var primary = get_node()
-
-
-func set_title():
-	if win:
-		title.text = "You Win :)"
-	else:
-		title.text = "You Lose :("
-
+	var primary = get_node("Killzone")
+	primary.dead.connect(on_state_change)
 
 func _on_timer_timeout():
 	get_tree().change.scene("res://Scenes/game.tscn")

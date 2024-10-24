@@ -875,6 +875,4 @@ position = Vector2(3321, -184)
 position = Vector2(4265, -74)
 
 [node name="Finish" parent="." instance=ExtResource("12_402mi")]
-visibility_layer = 2
-position = Vector2(4592, -17.5)
-scale = Vector2(2.65623, 2.1875)
+position = Vector2(4592, -20)
