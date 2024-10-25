@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba0nv012g8t7y"
+path="res://.godot/imported/Running Sound effect.mp3-487a82fa657618861a405067d14efe35.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Running Sound effect.mp3"
+dest_files=["res://.godot/imported/Running Sound effect.mp3-487a82fa657618861a405067d14efe35.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

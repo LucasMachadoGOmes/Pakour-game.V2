@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6ksoo3wvrau3"
+path="res://.godot/imported/Coin pick up sound effect.mp3-ca1e7606f2cf23abd6aa5a647b1de94f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Coin pick up sound effect.mp3"
+dest_files=["res://.godot/imported/Coin pick up sound effect.mp3-ca1e7606f2cf23abd6aa5a647b1de94f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
